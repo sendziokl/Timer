@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "timer",
+  "version": "${version}",
+  "name": "Timer",
+  "description": "Odlicza czas do odrodzenia (regeneracji) blokow. Wybierasz dowolny blok albo wlaczasz tryb auto na serwerach typu minestar.gg - mod sam uczy sie ile trwa regeneracja.",
+  "authors": ["Ty"],
+  "license": "MIT",
+  "icon": "assets/timer/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.timer.TimerMod"]
+  },
+  "mixins": ["timer.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
